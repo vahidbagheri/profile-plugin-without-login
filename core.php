@@ -183,7 +183,7 @@ function ipfp_get_user_profile() {
                         <tr>
                             <td>
                                 <a href="<?php echo esc_url($url); ?>" target="_blank">
-                                    <?php echo esc_html(mb_strimwidth($url, 0, 50, '...')); ?>
+                                    <?php echo esc_html(rawurldecode($url)); ?>
                                 </a>
                             </td>
                         </tr>
